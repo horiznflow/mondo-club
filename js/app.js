@@ -203,6 +203,25 @@
     try { const p = v.play(); if (p && p.catch) p.catch(() => {}); } catch (e) {}
   }
 
+  /* ---------- "Bienvenido al sótano" video: loads near the viewport, plays only while visible ---------- */
+  function setupWelcomeVideo() {
+    const v = $('.welcome-vid');
+    if (!v) return;
+    let reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    if (reduce || typeof window.IntersectionObserver !== 'function') return; // the poster stays as a still image
+    v.muted = true; v.defaultMuted = true;
+    const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+    new IntersectionObserver((en) => {
+      en.forEach((x) => {
+        if (x.isIntersecting) {
+          if (!v.src) { v.src = v.dataset.src; v.preload = 'auto'; }
+          play();
+        } else if (!v.paused) { v.pause(); }
+      });
+    }, { rootMargin: '200px 0px' }).observe(v);
+  }
+
   /* ---------- scroll reveal ---------- */
   function setupReveal() {
     let reduce = false;
@@ -220,5 +239,6 @@
   render();
   setMenu(false);
   setupVideo();
+  setupWelcomeVideo();
   setupReveal();
 })();

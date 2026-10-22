@@ -19,7 +19,7 @@ const I18N = {
       eyebrow: 'Bienvenido al sótano', h1: 'Un club', h2: 'para los que saben.',
       p: 'Bajas una escalera en Calle Berlín y la noche cambia: bandas tributo y en vivo, un DJ que sigue la fiesta después del show y cócteles que te acompañan hasta el cierre.',
       facts: ['Bandas en vivo', 'DJ after show', 'Coctelería', 'Mesas y box'],
-      img: 'Banda tocando en vivo en el escenario de Mondo'
+      img: 'Video: bandas en vivo, público y el letrero de neón de Mondo'
     },
     agenda: {
       eyebrow: 'Agenda', title: 'Próximas noches', more: 'Ver más en Instagram',
@@ -71,7 +71,7 @@ const I18N = {
       eyebrow: 'Welcome to the basement', h1: 'A club', h2: 'for those who know.',
       p: 'Walk down a staircase on Calle Berlín and the night changes: tribute and live bands, a DJ who keeps the party going after the show, and cocktails until closing time.',
       facts: ['Live bands', 'DJ after show', 'Cocktails', 'Tables & boxes'],
-      img: 'A band playing live on the Mondo stage'
+      img: 'Video: live bands, the crowd and the Mondo neon sign'
     },
     agenda: {
       eyebrow: 'Line-up', title: 'Upcoming nights', more: 'More on Instagram',
