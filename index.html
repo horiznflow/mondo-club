@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mondo Club · Bar oculto con música en vivo en Miraflores</title>
+<meta name="description" content="Mondo Club: bar oculto bajo The Coffee Shot en Calle Berlín 147, Miraflores. Bandas en vivo de rock y pop de los 80 y 90, DJ sets y coctelería. Viernes y sábado de 9 p. m. a 3 a. m.">
+<meta name="theme-color" content="#050507">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mondo Club · Unlock the night">
+<meta property="og:description" content="Sound. Cocktails. Energy. For those who know. Calle Berlín 147, Miraflores.">
+<meta property="og:image" content="assets/img/photos/banda-en-vivo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/logo-neon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" as="image" href="assets/img/hero-plate.webp">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/data.js" defer></script>
+<script src="js/i18n.js" defer></script>
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
+
+<!-- ===== Header ===== -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#top" data-i18n-aria="a11y.home"><img src="assets/img/logo-neon.png" alt="" width="52" height="52"><span>Mondo Club</span></a>
+    <nav data-i18n-aria="a11y.nav">
+      <ul class="nav">
+        <li><a href="#agenda" data-i18n="nav.agenda">Agenda</a></li>
+        <li><a href="#entrar" data-i18n="nav.access">Cómo entrar</a></li>
+        <li><a href="#experiencia" data-i18n="nav.exp">Experiencia</a></li>
+        <li><a href="#ubicacion" data-i18n="nav.loc">Ubicación</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-r">
+      <div class="lang" role="group" data-i18n-aria="a11y.lang">
+        <button type="button" aria-pressed="true" data-act="lang" data-lang="es" lang="es"><span aria-hidden="true">ES</span><span class="sr">Español</span></button>
+        <button type="button" aria-pressed="false" data-act="lang" data-lang="en" lang="en"><span aria-hidden="true">EN</span><span class="sr">English</span></button>
+      </div>
+      <a class="pill o hdr-cta" href="https://forms.gle/h2JjWmoWEDdMUpsX8" target="_blank" rel="noopener" data-link="list" data-i18n="nav.list">Entrar a la lista</a>
+      <button type="button" class="burger" aria-expanded="false" aria-controls="mmenu" data-act="toggleMenu">
+        <svg class="ic-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="ic-close" hidden width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mmenu" id="mmenu" data-i18n-aria="a11y.mobileNav" hidden>
+    <ul>
+      <li><a href="#agenda" data-act="closeMenu" data-i18n="nav.agenda">Agenda</a></li>
+      <li><a href="#entrar" data-act="closeMenu" data-i18n="nav.access">Cómo entrar</a></li>
+      <li><a href="#experiencia" data-act="closeMenu" data-i18n="nav.exp">Experiencia</a></li>
+      <li><a href="#ubicacion" data-act="closeMenu" data-i18n="nav.loc">Ubicación</a></li>
+    </ul>
+    <a class="pill p" href="https://forms.gle/h2JjWmoWEDdMUpsX8" target="_blank" rel="noopener" data-link="list" data-i18n="nav.list">Entrar a la lista</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="hero-media" id="hero-media" aria-hidden="true">
+    <img src="assets/img/hero-plate.webp" alt="" fetchpriority="high">
+  </div>
+  <div class="wrap hero-in">
+    <p class="kicker"><i aria-hidden="true"></i><span data-i18n="hero.kicker">Bar oculto bajo The Coffee Shot · Miraflores</span></p>
+    <h1 class="mega"><span class="mega-1">Unlock</span> <span class="out">the</span> <span class="neon">night.</span></h1>
+    <p class="tag">Sound. Cocktails. Energy. For those who know.</p>
+    <p class="lede" data-i18n="hero.lede"></p>
+    <div class="hero-ctas">
+      <a class="pill p" href="#agenda" data-i18n="hero.cta1">Ver la agenda</a>
+      <a class="pill a" href="https://wa.me/51965077910" target="_blank" rel="noopener" data-link="wa:general" data-i18n="hero.cta2">Reservar mesa por WhatsApp</a>
+    </div>
+    <p class="hours"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="hero.hours">Viernes y sábado · 9 p. m. – 3 a. m.</span></p>
+  </div>
+  <!-- next night bar: filled by js/app.js -->
+  <div class="next"><div class="wrap next-in" id="next"></div></div>
+</section>
+
+<!-- ===== Marquee ===== -->
+<div class="mq" aria-hidden="true"><div class="mq-t" id="mq"></div></div>
+
+<!-- ===== Welcome ===== -->
+<section class="sec" id="experiencia" aria-labelledby="welcome-h">
+  <div class="wrap welcome rv">
+    <figure class="photo welcome-ph"><img src="assets/img/photos/banda-en-vivo.webp" alt="" data-i18n-alt="welcome.img" loading="lazy" width="1000" height="1320"></figure>
+    <div>
+      <p class="eyebrow" data-i18n="welcome.eyebrow">Bienvenido al sótano</p>
+      <h2 class="h2" id="welcome-h"><span data-i18n="welcome.h1">Un club</span> <em data-i18n="welcome.h2">para los que saben.</em></h2>
+      <p class="p" data-i18n="welcome.p"></p>
+      <ul class="facts" data-list="welcome.facts"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Agenda ===== -->
+<section class="sec sec-tight" id="agenda" aria-labelledby="agenda-h">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <div><p class="eyebrow" data-i18n="agenda.eyebrow">Agenda</p><h2 class="h2" id="agenda-h" tabindex="-1" data-i18n="agenda.title">Próximas noches</h2></div>
+      <a class="pill o" href="https://www.instagram.com/mondo.club.lima/" target="_blank" rel="noopener" data-i18n="agenda.more">Ver más en Instagram</a>
+    </div>
+    <div class="week">
+      <div><p class="week-t"><span data-i18n="agenda.friT">Viernes</span> · <em data-i18n="agenda.friN">Selected Nights</em></p><p data-i18n="agenda.friP"></p></div>
+      <div><p class="week-t"><span data-i18n="agenda.satT">Sábado</span> · <em data-i18n="agenda.satN">Live at Mondo</em></p><p data-i18n="agenda.satP"></p></div>
+    </div>
+    <!-- event rows + flyer preview: filled by js/app.js -->
+    <div class="ag" id="agenda-list"></div>
+  </div>
+</section>
+
+<!-- ===== Statement ===== -->
+<section class="stmt">
+  <div class="wrap rv">
+    <p class="stmt-t"><span data-i18n="stmt.a">Son los clásicos que</span> <em data-i18n="stmt.b">hicieron historia.</em> <span data-i18n="stmt.c">Y aquí suenan en vivo.</span></p>
+    <p class="stmt-g" data-i18n="stmt.genres">Rock · Pop · New wave · Rock en español</p>
+  </div>
+</section>
+
+<!-- ===== Access ===== -->
+<section class="sec" id="entrar" aria-labelledby="entrar-h">
+  <div class="wrap rv">
+    <p class="eyebrow" data-i18n="access.eyebrow">Cómo entrar</p>
+    <h2 class="h2" id="entrar-h"><span data-i18n="access.h1">Tres formas de</span> <em data-i18n="access.h2">vivir la noche</em></h2>
+    <div class="acc">
+      <article>
+        <span class="n" aria-hidden="true">01</span>
+        <h3 data-i18n="access.a.t">Lista de ingreso</h3>
+        <p data-i18n="access.a.p"></p>
+        <ul data-list="access.a.li"></ul>
+        <a class="pill o" href="https://forms.gle/h2JjWmoWEDdMUpsX8" target="_blank" rel="noopener" data-link="list" data-i18n="access.a.cta">Entrar a la lista</a>
+      </article>
+      <article class="hl">
+        <span class="n" aria-hidden="true">02</span>
+        <h3 data-i18n="access.b.t">Mesa reservada</h3>
+        <p data-i18n="access.b.p"></p>
+        <ul data-list="access.b.li"></ul>
+        <a class="pill p" href="https://wa.me/51965077910" target="_blank" rel="noopener" data-link="wa:general" data-i18n="access.b.cta">Reservar por WhatsApp</a>
+      </article>
+      <article>
+        <span class="n" aria-hidden="true">03</span>
+        <h3 data-i18n="access.c.t">Box VIP</h3>
+        <p data-i18n="access.c.p"></p>
+        <ul data-list="access.c.li"></ul>
+        <a class="pill a" href="https://wa.me/51965077910" target="_blank" rel="noopener" data-link="wa:box" data-i18n="access.c.cta">Consultar box</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Bands ===== -->
+<section class="bands" data-i18n-aria="a11y.bands">
+  <p class="eyebrow" data-i18n="bandsT">Ya sonaron en Mondo</p>
+  <div class="mq-clip"><div class="mq-t" id="bands"></div></div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section class="sec" aria-labelledby="gal-h">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <div><p class="eyebrow" data-i18n="gallery.eyebrow">Así se vive</p><h2 class="h2" id="gal-h"><span data-i18n="gallery.h1">Tonight</span> <em data-i18n="gallery.h2">at Mondo</em></h2></div>
+      <a class="pill o" href="https://www.instagram.com/mondo.club.lima/" target="_blank" rel="noopener">@mondo.club.lima ↗</a>
+    </div>
+    <div class="gal">
+      <figure class="photo"><img src="assets/img/photos/noche-1.webp" alt="" data-i18n-alt="gallery.img.0" loading="lazy" width="1100" height="1100"></figure>
+      <figure class="photo"><img src="assets/img/photos/noche-2.webp" alt="" data-i18n-alt="gallery.img.1" loading="lazy" width="800" height="800"></figure>
+      <figure class="photo"><img src="assets/img/photos/noche-3.webp" alt="" data-i18n-alt="gallery.img.2" loading="lazy" width="800" height="800"></figure>
+      <figure class="photo"><img src="assets/img/photos/noche-4.webp" alt="" data-i18n-alt="gallery.img.3" loading="lazy" width="1100" height="1100"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Location ===== -->
+<section class="sec sec-tight" id="ubicacion" aria-labelledby="loc-h">
+  <div class="wrap rv">
+    <p class="eyebrow" data-i18n="loc.eyebrow">Cómo llegar</p>
+    <h2 class="h2" id="loc-h"><span data-i18n="loc.h1">Bajo Calle</span> <em data-i18n="loc.h2">Berlín</em></h2>
+    <div class="loc">
+      <div>
+        <dl>
+          <div><dt data-i18n="loc.addrL">Dirección</dt><dd>Calle Berlín 147, Miraflores <small data-i18n="loc.addrS">En el sótano de The Coffee Shot</small></dd></div>
+          <div><dt data-i18n="loc.hoursL">Horario</dt><dd><span data-i18n="loc.hoursV">Viernes y sábado</span> <small data-i18n="loc.hoursS">9:00 p. m. – 3:00 a. m.</small></dd></div>
+          <div><dt data-i18n="loc.resL">Reservas</dt><dd><a href="https://wa.me/51965077910" target="_blank" rel="noopener" data-link="wa:general">WhatsApp 965 077 910</a> <small data-i18n="loc.resS">Mesas, box y consultas</small></dd></div>
+        </dl>
+        <a class="pill o loc-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Berl%C3%ADn+147+Miraflores+Lima" target="_blank" rel="noopener" data-i18n="loc.maps">Abrir en Google Maps</a>
+      </div>
+      <div class="map"><iframe src="https://www.google.com/maps?q=Calle+Berl%C3%ADn+147,+Miraflores,+Lima,+Per%C3%BA&amp;z=17&amp;output=embed" title="Mapa de Calle Berlín 147, Miraflores" data-i18n-title="loc.map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-g">
+      <div>
+        <a class="logo" href="#top" data-i18n-aria="a11y.home"><img src="assets/img/logo-neon.png" alt="" width="52" height="52" loading="lazy"><span>Mondo Club</span></a>
+        <p class="foot-tag">Sound. Cocktails. Energy.<br>For those who know.</p>
+      </div>
+      <div>
+        <h2 data-i18n="foot.night">Noche</h2>
+        <ul>
+          <li><a href="#agenda" data-i18n="foot.agenda">Agenda</a></li>
+          <li><a href="https://forms.gle/h2JjWmoWEDdMUpsX8" target="_blank" rel="noopener" data-link="list" data-i18n="foot.list">Entrar a la lista</a></li>
+          <li><a href="https://wa.me/51965077910" target="_blank" rel="noopener" data-link="wa:general" data-i18n="foot.table">Reservar mesa</a></li>
+          <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Calle+Berl%C3%ADn+147%2C+Miraflores%2C+Lima%2C+Per%C3%BA" target="_blank" rel="noopener" data-link="maps" data-i18n="foot.loc">Cómo llegar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.social">Redes</h2>
+        <ul>
+          <li><a class="soc" href="https://www.instagram.com/mondo.club.lima/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg>Instagram</a></li>
+          <li><a class="soc" href="https://www.facebook.com/mondoclublima" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v4H8v7h4v-7h3l.5-4H12V7.5A.5.5 0 0 1 12.5 7H15z"/></svg>Facebook</a></li>
+          <li><a class="soc" href="https://wa.me/51965077910" target="_blank" rel="noopener" data-link="wa:general"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2z"/></svg>WhatsApp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.legal">Legal</h2>
+        <ul>
+          <li><a href="terminos.html" data-i18n="foot.terms">Términos y condiciones</a></li>
+          <li><a href="privacidad.html" data-i18n="foot.priv">Política de privacidad</a></li>
+          <li><a class="lr-link" href="libro-de-reclamaciones.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M8 7h8M8 11h6"/></svg><span data-i18n="foot.book">Libro de Reclamaciones</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-big" aria-hidden="true">Mondo</p>
+    <div class="foot-copy"><span data-i18n="foot.copy"></span><span data-i18n="foot.age"></span></div>
+  </div>
+</footer>
+</body>
+</html>

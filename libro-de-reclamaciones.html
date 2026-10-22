@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Libro de Reclamaciones · Mondo Club</title>
+<meta name="description" content="Libro de Reclamaciones virtual de Mondo Club, conforme al Código de Protección y Defensa del Consumidor (Ley N.° 29571).">
+<meta name="theme-color" content="#050507">
+<link rel="icon" href="assets/img/logo-neon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/data.js" defer></script>
+<script src="js/legal.js" defer></script>
+<script src="js/reclamaciones.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="index.html" aria-label="Mondo Club, ir al inicio"><img src="assets/img/logo-neon.png" alt="" width="52" height="52"><span>Mondo Club</span></a>
+    <a class="pill o" href="index.html">Volver al inicio</a>
+  </div>
+</header>
+
+<main id="main" class="legal">
+  <div class="wrap">
+    <p class="eyebrow">Ley N.° 29571 · D.S. N.° 011-2011-PCM</p>
+    <h1>Libro de Reclamaciones</h1>
+    <p class="intro">Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, esta institución cuenta con un Libro de Reclamaciones a tu disposición. Completa la hoja de reclamación virtual.</p>
+
+    <div class="box">
+      <dl>
+        <dt>Hoja de reclamación N.°</dt><dd id="lr-num">—</dd>
+        <dt>Fecha</dt><dd id="lr-date">—</dd>
+        <dt>Proveedor</dt><dd data-legal="name">[Razón social por confirmar]</dd>
+        <dt>RUC</dt><dd data-legal="ruc">[RUC por confirmar]</dd>
+        <dt>Establecimiento</dt><dd>Mondo Club · <span data-legal="address">Calle Berlín 147, Miraflores, Lima, Perú</span></dd>
+      </dl>
+    </div>
+
+    <form class="claim" id="claim-form" novalidate>
+      <fieldset>
+        <legend>1. Identificación del consumidor reclamante</legend>
+        <div class="fgrid">
+          <div class="field full"><label for="c-name">Nombres y apellidos</label><input class="inp" id="c-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field">
+            <label for="c-doctype">Tipo de documento</label>
+            <select class="inp" id="c-doctype" name="docType" required>
+              <option value="DNI">DNI</option>
+              <option value="Carné de extranjería">Carné de extranjería</option>
+              <option value="Pasaporte">Pasaporte</option>
+            </select>
+          </div>
+          <div class="field"><label for="c-doc">Número de documento</label><input class="inp" id="c-doc" name="doc" type="text" inputmode="numeric" autocomplete="off" required></div>
+          <div class="field full"><label for="c-address">Domicilio</label><input class="inp" id="c-address" name="address" type="text" autocomplete="street-address" required></div>
+          <div class="field"><label for="c-phone">Teléfono</label><input class="inp" id="c-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="c-email">Correo electrónico</label><input class="inp" id="c-email" name="email" type="email" inputmode="email" autocomplete="email" required aria-describedby="c-email-hint"><p class="hint" id="c-email-hint">Aquí recibirás la copia de tu hoja de reclamación.</p></div>
+          <div class="field full"><label for="c-guardian">Padre, madre o apoderado <span class="opt">(solo si quien reclama es menor de edad)</span></label><input class="inp" id="c-guardian" name="guardian" type="text"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Identificación del bien contratado</legend>
+        <div class="choice" role="radiogroup" aria-label="Tipo de bien contratado">
+          <label><input type="radio" name="good" value="Servicio" checked><span><b>Servicio</b><span>Entrada, reserva de mesa o box, atención</span></span></label>
+          <label><input type="radio" name="good" value="Producto"><span><b>Producto</b><span>Bebidas, comida u otro producto</span></span></label>
+        </div>
+        <div class="fgrid">
+          <div class="field"><label for="c-amount">Monto reclamado (S/) <span class="opt">(opcional)</span></label><input class="inp" id="c-amount" name="amount" type="text" inputmode="decimal" placeholder="0.00"></div>
+          <div class="field"><label for="c-when">Fecha del hecho <span class="opt">(opcional)</span></label><input class="inp" id="c-when" name="when" type="date"></div>
+          <div class="field full"><label for="c-desc">Descripción del producto o servicio</label><input class="inp" id="c-desc" name="desc" type="text" required></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Detalle de la reclamación y pedido</legend>
+        <div class="choice" role="radiogroup" aria-label="Tipo de registro">
+          <label><input type="radio" name="kind" value="Reclamo" checked><span><b>Reclamo</b><span>Disconformidad relacionada con los productos o servicios.</span></span></label>
+          <label><input type="radio" name="kind" value="Queja"><span><b>Queja</b><span>Disconformidad no relacionada con los productos o servicios, o malestar por la atención al público.</span></span></label>
+        </div>
+        <div class="fgrid">
+          <div class="field full"><label for="c-detail">Detalle</label><textarea class="inp" id="c-detail" name="detail" required></textarea></div>
+          <div class="field full"><label for="c-request">Pedido</label><textarea class="inp" id="c-request" name="request" required></textarea></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Observaciones y acciones adoptadas por el proveedor</legend>
+        <p class="hint" style="margin-top:12px">Esta sección la completa Mondo Club al responder tu reclamo o queja.</p>
+      </fieldset>
+
+      <div>
+        <label class="check"><input type="checkbox" id="c-accept" name="accept" required><span>Declaro que la información es verdadera y acepto el tratamiento de mis datos para atender esta hoja, según la <a href="privacidad.html">Política de privacidad</a>.</span></label>
+        <p class="err" id="form-err" role="alert" hidden></p>
+      </div>
+
+      <div class="note-box">
+        <p style="margin:0">La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.</p>
+        <p>El proveedor debe dar respuesta al reclamo o queja en un plazo no mayor a quince (15) días hábiles.</p>
+      </div>
+
+      <div class="form-foot">
+        <button type="submit" class="pill p">Enviar hoja de reclamación</button>
+      </div>
+    </form>
+
+    <!-- Copy of the claim sheet, shown after sending -->
+    <section class="copy-sheet" id="copy" hidden aria-labelledby="copy-h">
+      <div class="ok" role="status">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+        <div><b id="ok-t">Hoja de reclamación registrada</b><p id="ok-b"></p></div>
+      </div>
+      <h2 id="copy-h" tabindex="-1">Copia de tu hoja de reclamación</h2>
+      <div class="box"><dl id="copy-dl"></dl></div>
+      <div class="form-foot no-print" style="margin-top:20px">
+        <button type="button" class="pill p" id="btn-print">Imprimir o guardar PDF</button>
+        <a class="pill o" href="libro-de-reclamaciones.html">Registrar otra hoja</a>
+      </div>
+    </section>
+
+    <nav class="legal-nav" aria-label="Documentos legales">
+      <a class="pill o" href="terminos.html">Términos y condiciones</a>
+      <a class="pill o" href="privacidad.html">Política de privacidad</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="legal-foot">
+  <div class="wrap"><span>© 2026 Mondo Club · <span data-legal="name">[Razón social por confirmar]</span> · RUC <span data-legal="ruc">[RUC por confirmar]</span></span><span>Calle Berlín 147, Miraflores</span></div>
+</footer>
+</body>
+</html>
